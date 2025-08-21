@@ -1,0 +1,129 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+    <h1>XYZ</h1>
+    <h3>XYZ</h3>
+    <div id="players">
+        <div id="player_red" class="player">1</div>
+        <div id="player_blue" class="player">2</div>
+    </div>
+    <div id="cards">
+        <div class="card">r1</div>
+        <div class="card">r2</div>
+        <div class="card">r3</div>
+        <div class="card">r4</div>
+        <div class="card">r5</div>
+        <div class="card">r6</div>
+        <div class="card">r7</div>
+        <div class="card">b1</div>
+        <div class="card">b2</div>
+        <div class="card">b3</div>
+        <div class="card">b4</div>
+        <div class="card">b5</div>
+        <div class="card">b6</div>
+        <div class="card">b7</div>
+        <div class="card">j</div>
+    </div>
+    <script src="cards.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Matching Game</title>
+    <link rel="stylesheet" href="cards.css">
+</head>
+
+<body>
+    <!-- PAGE 1: INTRO -->
+    <div id="intro-page" class="page active">
+        <h1>🎮 Card Matching Game</h1>
+
+        <div class="instructions">
+            <h3>📋 How to Play:</h3>
+            <p>• Find matching pairs by flipping 2 cards per turn</p>
+            <p>• First player to find <strong>4 pairs</strong> wins!</p>
+            <p>• ⚠️ <strong>Joker card</strong> costs you -1 point!</p>
+            <p>• If you find a match, you get another turn!</p>
+        </div>
+
+        <button class="btn" onclick="startGame('person')">
+            👥 Play vs Friend
+        </button>
+
+        <button class="btn secondary" onclick="startGame('computer')">
+            🤖 Play vs Computer
+        </button>
+    </div>
+
+    <!-- PAGE 2: VS PERSON -->
+    <div id="person-page" class="page">
+        <h1>👥 Two Player Mode</h1>
+
+        <div class="game-info">
+            <div class="score">
+                Player 1: <span id="p1-score">0</span> pairs
+            </div>
+            <div class="current-turn" id="person-turn">
+                Player 1's Turn
+            </div>
+            <div class="score">
+                Player 2: <span id="p2-score">0</span> pairs
+            </div>
+        </div>
+
+        <div class="status-message" id="person-status">
+            Player 1: Choose 2 cards to flip
+        </div>
+
+        <div class="card-grid" id="person-cards"></div>
+
+        <button class="btn back" onclick="showPage('intro-page')">
+            ← Back to Menu
+        </button>
+    </div>
+
+    <!-- PAGE 3: VS COMPUTER -->
+    <div id="computer-page" class="page">
+        <h1>🤖 vs Computer Mode</h1>
+
+        <div class="game-info">
+            <div class="score">
+                You: <span id="human-score">0</span> pairs
+            </div>
+            <div class="current-turn" id="computer-turn">
+                Your Turn
+            </div>
+            <div class="score">
+                Computer: <span id="ai-score">0</span> pairs
+            </div>
+        </div>
+
+        <div class="status-message" id="computer-status">
+            Your turn: Choose 2 cards to flip
+        </div>
+
+        <div class="card-grid" id="computer-cards"></div>
+
+        <button class="btn back" onclick="showPage('intro-page')">
+            ← Back to Menu
+        </button>
+    </div>
+    <script src="cards.js"></script>
+</body>
+
+</html>

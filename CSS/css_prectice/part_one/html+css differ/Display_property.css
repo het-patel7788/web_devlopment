@@ -1,0 +1,25 @@
+h2{
+    display: inline;
+}
+.block{
+    display: block;
+}
+#sn{
+    background-color: rgb(211, 240, 45);
+    border: 2px solid black;
+    height: 40px;
+    width: 4px; /*here it is ignoring hight and width property.*/
+    padding: 10px;
+    margin: 10px;/*here it is not ignoring padding and margin.*/
+}
+.inline-block{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(23, 202, 98);
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block; /*only inline ignore hight width and much more so if you want to do like this type of things use inline-block..*/
+}
+#none{
+    display: none;
+}

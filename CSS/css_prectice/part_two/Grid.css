@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.container{
+    height: 300px;
+    width: 500px;
+    margin: 12px auto;
+    background-color: rgb(7, 143, 143);
+    border: 2px solid black;
+    display: grid;
+    /* display: inline-grid; -->it will make it span */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns:  213px 213px 213px; */
+    /* grid-template-rows: repeat(5, 1fr)/ */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    /* row-gap: 10px;
+    column-gap: 10px; */
+} 
+.item{
+    /* height: 50px;
+    width: 70px; */
+    background-color: rgb(228, 187, 125);
+    border: 2px solid black;
+    text-align: center;
+    font-size: 24px;
+}
+#one{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1/4;
+}
+.two{
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: 2/4;
+}

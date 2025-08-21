@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-bar with help of flex</title>
+</head>
+ <style>
+    /* .logo{
+        width: 30px;
+        height: 25px;
+        background-color: aqua;
+    }  */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .right ul{
+        display: flex;
+        gap: 34px;
+    }
+    .right ul li{
+        list-style: none;
+        /* margin: 5px; */
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img width="150" height="25" src="https://www.anaconda.com/wp-content/uploads/2022/12/anaconda_secondary_logo.svg" alt="Anaconda" class="site-logo__secondary-image" loading="lazy" data-airgap-id="41">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+</body>
+</html>

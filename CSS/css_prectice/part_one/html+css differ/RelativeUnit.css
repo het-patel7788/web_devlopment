@@ -1,0 +1,70 @@
+h1{
+    border: 2px solid black;
+    width: 33%;
+}
+#first-one{
+    border: 2px solid black;
+    height: 80%px;
+    width: 90%px;
+    margin: 10%;
+    background-color: red;
+}
+#second-one{
+    border: 2px solid black;
+    /* height: 200px;
+    width: 200px; */
+    height: 60.66%;
+    width: 60.66%;
+    /* margin: 50px; */
+    margin: 17%;
+    background-color: orange;
+}
+#third-one{
+    border: 2px solid black;
+    /* height: 100px;
+    width: 100px; */
+    height:50%;
+    width: 50%;
+    /* margin: 50px; */
+    margin: 25%;
+    background-color: yellow;
+}
+
+/* new one started.. */
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    border: 2px solid black;
+    margin: 20px;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 40px;
+    font-size: 2em;
+    padding: 1em;
+}
+button{
+    font-size: 30px;
+    border: 4px solid rgb(112, 57, 214);
+    border-radius: 15px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 4px solid gray;
+}
+.snow_ball{
+    /* this is snow ball efect */
+    font-size: 2em;
+    /* to avoid this kind of problem we use rem instad of em. */
+}
+.snow_ball2{
+    font-size: 2rem;
+}

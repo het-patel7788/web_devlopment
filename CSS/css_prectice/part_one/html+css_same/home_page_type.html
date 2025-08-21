@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS desging.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+        body {
+            background-color: gray;
+            padding: 30px;
+            display: flex;
+        }
+
+        .lake {
+            padding: 5px;
+            margin: 0px 0px 0px 17px;
+        }
+
+        .lake h3 {
+            font-size: 29px;
+            color: rgb(43, 3, 66);
+
+
+        }
+
+        .lake h3 i {
+            
+            margin: 0 5px;
+            color: rgb(43, 3, 66);
+            /* Same color as text */
+        }
+
+
+        .card {
+            background-color: white;
+            width: 335px;
+            height: 650px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+
+            border-radius: 10px;
+        }
+
+        .content {
+            padding: 0px;
+        }
+
+        .content p {
+            padding: 0px;
+            margin: 4px;
+            color: rgb(49, 49, 49);
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+        }
+
+        h2 {
+            margin-block-start: 15px;
+            margin-block-end: 10px;
+        }
+
+        .content h2 {
+            padding: 1px 5px 0px 80px;
+        }
+
+        .capsules {
+            padding: 9px 20px 4px 10px;
+
+        }
+
+        .capsules span {
+            border: 1px solid black;
+            padding: 2px 7px;
+            border-radius: 10px;
+
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            padding: 10px 13px 10px 13px;
+            margin: 3px 3px 3px 3px;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 15px;
+            border: none;
+            color: blue;
+            background-color: rgb(206, 237, 241);
+        }
+
+        .button button:hover {
+            background-color: white;
+            color: purple;
+        }
+
+        ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 335px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #ccc;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+            border-end-end-radius: 10px;
+            border-end-start-radius: 10px;
+        }
+
+        .bottom-nav i {
+            font-size: 20px;
+            color: #444;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="lake">
+            <h3><i class="fas fa-water"></i> The Lake <i class="fas fa-chevron-down"></i></h3h3>
+
+        </div>
+
+        <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2020/04/04/03/07/lake-5000642_1280.jpg" alt="img_of_boat"
+                width="325" height="210">
+        </div>
+
+        <div class="capsules">
+            <span>boat</span>
+            <span>men</span>
+        </div>
+
+        <div class="content">
+            <h2>The boat rider</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, exercitationem itaque deserunt iusto
+                repellat consequatur vitae unde doloremque laboriosam voluptatem deleniti, repellendus magnam. Velit est
+                sunt illo doloribus.
+            </p>
+        </div>
+
+        <div class="button">
+            <button>Read more</button>
+        </div>
+
+        <div class="bottom-nav">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-plus-square"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+    </div>
+</body>
+
+</html>

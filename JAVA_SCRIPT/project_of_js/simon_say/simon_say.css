@@ -1,0 +1,220 @@
+body {
+    text-align: center;
+    font-family: monospace;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.game-info {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.score {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    height: 180px;
+    width: 180px;
+    border: 3px solid #333;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    user-select: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.btn.flash {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+    border-color: white;
+}
+
+.red {
+    background: linear-gradient(145deg, #ff4444, #cc3333);
+}
+
+.red.flash {
+    background: linear-gradient(145deg, #ff6666, #ff4444);
+}
+
+.green {
+    background: linear-gradient(145deg, #44ff44, #33cc33);
+}
+
+.green.flash {
+    background: linear-gradient(145deg, #66ff66, #44ff44);
+}
+
+.blue {
+    background: linear-gradient(145deg, #4444ff, #3333cc);
+}
+
+.blue.flash {
+    background: linear-gradient(145deg, #6666ff, #4444ff);
+}
+
+.yellow {
+    background: linear-gradient(145deg, #ffff44, #cccc33);
+    color: #333;
+}
+
+.yellow.flash {
+    background: linear-gradient(145deg, #ffff66, #ffff44);
+}
+
+.game-over {
+    color: #ff4444;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.instructions {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and small laptops */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        max-width: 350px;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .btn {
+        height: 150px;
+        width: 150px;
+        font-size: 1.2rem;
+    }
+
+    .game-info {
+        font-size: 1rem;
+        margin: 15px 0;
+    }
+
+    .instructions {
+        padding: 12px;
+        margin: 15px auto;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        max-width: 280px;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .btn {
+        height: 120px;
+        width: 120px;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    .game-info {
+        font-size: 0.9rem;
+        margin: 12px 0;
+    }
+
+    .instructions {
+        padding: 10px;
+        font-size: 0.85rem;
+        margin: 12px auto;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .container {
+        max-width: 240px;
+        gap: 6px;
+    }
+
+    .btn {
+        height: 100px;
+        width: 100px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-info {
+        font-size: 0.8rem;
+    }
+}

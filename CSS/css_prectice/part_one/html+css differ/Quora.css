@@ -1,0 +1,70 @@
+*{
+    background-color: blanchedalmond;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color: rgb(173, 91, 91);
+}
+h1{
+    color: #b63935;
+}
+#login{
+    background-color: rgb(219, 161, 161);
+    font-weight: 800;
+    color: rgb(38, 39, 30);
+    cursor: pointer;
+    border-radius: 14px;
+    border: none;
+    padding: 6px;
+}
+#login:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid purple;
+    padding: 3px;
+}
+#signup{
+    background-color: rgb(219, 161, 161);
+    font-weight: 700;
+    color: rgb(38, 39, 30);
+    cursor: pointer;
+    border-radius: 14px;
+    border: none;
+    padding: 6px;
+}
+#signup:hover{
+    background-color: black;
+    color: white;   
+    border: 3px solid purple;
+    padding: 3px; 
+}
+.input{
+    margin-left: 2px;
+    cursor: inherit;
+    padding: 3px;
+}
+ul{
+    list-style: circle;
+}
+a{
+    color: rgb(99, 159, 170);
+    text-decoration: none;
+}
+button{
+    background-color: rgb(90, 28, 28);
+    color: white;
+    padding: 1px;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(90, 28, 28);
+    background-color: rgb(252, 252, 252);
+    font-weight: 700;
+    border: 2px soild black;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.nameouser{
+    font-weight: 600;
+    color: solid black;
+}

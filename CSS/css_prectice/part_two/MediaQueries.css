@@ -1,0 +1,21 @@
+h1{
+    background-color: orange;
+    border: 3px solid black;
+}
+
+@media (max-width: 400px){
+    h1{
+        background-color: red;
+        color: white;
+        border: 1px solidblack;
+    }
+}
+
+/* Mediaqueries in orientation --> landscape or potrate. */
+
+@media (orientation: landscape){
+    h1{
+        background-color: aqua;
+        color: blueviolet;
+    }
+}

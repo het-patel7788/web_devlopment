@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="simon_say.css">    
+</head>
+
+<body>
+    <h1>🎮 Simon Says Game</h1>
+    <h3 id="status">Press any key to start the game</h3>
+
+    <div class="game-info">
+        <div>Level: <span class="score" id="level">0</span></div>
+        <div>High Score: <span class="score" id="high-score">0</span></div>
+    </div>
+
+    <div class="container">
+        <div class="btn red" data-color="red">RED</div>
+        <div class="btn green" data-color="green">GREEN</div>
+        <div class="btn blue" data-color="blue">BLUE</div>
+        <div class="btn yellow" data-color="yellow">YELLOW</div>
+    </div>
+
+    <div class="instructions">
+        <p><strong>How to Play:</strong></p>
+        <p>Watch the sequence of flashing colors, then repeat it by clicking the buttons in the same order. Each level
+            adds one more color to remember!</p>
+    </div>
+    <script src="simon_say.js"></script>
+</body>
+
+</html>
