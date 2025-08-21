@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+</head>
+
+
+<body>
+    <table border="black">
+        <caption>Food menu</caption>
+        <thead>
+            <tr>
+                <th>item</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        </tbody>
+        <tr>
+            <td> samosa </td>
+            <td> 25 </td>
+        </tr>
+        <tr>
+            <td>cold dirnk</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>puff</td>
+            <td>30</td>
+        </tr>
+        <tbody>
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <br>
+    <br>
+    <br>
+    <table border="black">
+        <caption>Food menu</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">item</th>
+                <th colspan="2">price</th>
+            </tr>
+            <tr>
+                <th>inr</th>
+                <th>usd</th>
+            </tr>
+        </thead>
+        </tbody>
+        <tr>
+            <td> samosa </td>
+            <td> 25 </td>
+            <td>0.9</td>
+        </tr>
+        <tr>
+            <td>cold dirnk</td>
+            <td>20</td>
+            <td>0.8</td>
+        </tr>
+        <tr>
+            <td>puff</td>
+            <td>30</td>
+            <td>1.2</td>
+        </tr>
+        <tbody>
+    </table>
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <table border="black">
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red eyes</th>
+            </tr>
+            <tr>
+                <th>Hight</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>males</td>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>female</td>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>35%</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
+
+
+
+
+<!-- it's time for forms -->
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+</head>
+
+<body>
+    <form action="/action">
+        SAMPLE
+        <input />
+        <br><br>
+        <label>
+            <!-- lable is used for connect both  -->
+            USER NAME
+            <input type="text" placeholder="Enter user name..">
+        </label>
+
+        <br><br>
+
+        <label for="password">Enter password here</label>
+        <input type="password" id="password" placeholder="Enter password">
+
+        <br><br>
+
+        NUMBER
+        <input type="number" placeholder="enter only number">
+
+        <br><br>
+
+        TIME
+        <input type="time">
+        <br><br>
+        COLOUR
+        <input type="color">
+        <br><br>
+        <div>
+            <br><br>
+            BUTTONS ARE AS BELOW...
+            <br><br>
+            <!-- button are defult submit type -->
+            <button type="submit">submit</button>
+            <!-- we can use input to do this same. -->
+            <input type="submit" value="submit">
+
+            <!-- other types are as bellow. -->
+            <br><br>
+            <button type="button">hello</button>
+            <!-- we can use input to do this same. -->
+            <input type="button" value="hello">
+            <br><br>
+            <button type="reset">reset</button>
+            <br><br>
+        </div>
+        <!-- name attribute : Name of the form control. Submitted with the form as part of a name/value pair. -->
+        <div>
+            <br><br>
+            NAME ATTRIBUTE IS AS BELOW...
+            <div>
+                <br>
+                <label for="uname">Username: </label>
+                <input type="text" placeholder="Enter user name" id="uname" name="Username">
+            </div>
+            <div>
+                <br>
+                <label for="upass">password: </label>
+                <input type="password" placeholder="Enter passwordhere" id="upass">
+            </div>
+            <div>
+                <br>
+                <button>submit</button>
+                <!-- after submitting check link url. -->
+            </div>
+        </div>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <!-- here below url is of youtube and by using name as search_query we are creating a youtube full url -->
+    <form action="https://www.youtube.com/results">
+        search in youtube with youtube quarry.
+        <br>
+        <input type="text" placeholder="Enter user name" id="search" name="search_query">
+        <!-- if we change name here it wont work. -->
+        <button> search </button>
+        <br><br>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <!-- practice question : go to google using form... -->
+    <form action="https://www.google.com/search">
+        search in google with google quarry.
+        <br>
+        <input type="text" name="q" placeholder="search for apple">
+        <button> search </button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="/server">
+        <input type="checkbox" id="age" name="age">
+        <label for="age">I am 18+</label>
+        <br><br>
+        <input type="radio" id="apple" name="fruit">
+        <label for="apple">apple</label>
+        <input type="radio" id="mango" name="fruit">
+        <label for="mango">mango</label>
+        <br><br>
+        <!-- here name was main to make it happend because there shold be only one value that can be go with url. -->
+        <!-- now do this with cheak box. -->
+        Choose your subjects:
+        <br>
+        <input type="checkbox" id="math" name="sub" value="math">
+        <label for="math">math</label>
+        <input type="checkbox" id="sci" name="sub" value="sci">
+        <label for="sci">sci</label>
+        <input type="checkbox" id="eng" name="sub" value="eng">
+        <label for="eng">eng</label>
+        <br>
+        <button>submit</button>
+        <br><br>
+    </form>
+    <!-- next is dropdown with select tags. -->
+    <form action="/server">
+        <label for="profection">select : </label>
+        <select name="profection" id="profection">
+            <option>select</option>
+            <option value="stu">student</option>
+            <option value="dev">devloper</option>
+            <option value="dsa">dsa</option>
+        </select>
+        <br><br>
+        <label for="vol">volume</label>
+        <input type="range" min="0" max="100" name="vol" step="10" value="70"/>
+        <button>submit</button>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <form action="server/">
+        <label for="feedback">Enter you feed back</label>
+        <textarea name="febe" id="feedback" rows="5" cols="25" placeholder="write here "></textarea>
+        <button>submit</button>
+        <br><hr><br>
+    </form>
+
+    <!-- now last practice question of html. -->
+    <form action="server/">
+        <h1>Registration form.</h1>
+        <br>
+        <div>
+            <label for="us_name">Enter your first name :</label>
+            <input type="text" id="us_name" placeholder="Enter here">
+            <br><br>
+            <label for="ls_name">Enter your last name :</label>
+            <input type="text" id="ls_name" placeholder="Enter here">
+            <br><br>
+        </div>
+        <div>
+            <!-- <p>Enetr you gender :</p> -->
+             <label for="male">Enter your gender :</label>
+            <input type="radio" id="male" name="gender">
+            <label for="gender">males</label>
+            <input type="radio" id="female" name="gender">
+            <label for="gender">females</label>
+            <br><br>
+        </div>
+        <div>
+            <label for="comop">Select your opreting system.</label>
+            <select name="fil" id="fil">
+                <option value="sel" id="comop">select</option>
+                <option value="comW">computer_win</option>
+                <option value="comL">computer_lin</option>
+                <option value="comM">computer_mac</option>
+
+            </select>
+        </div>
+        <div>
+            <h3>Do you agree terms and conditions.</h3>
+            <label for="cheakss">Yes i agree : </label>
+            <input type="checkbox" name="cheakss" id="cheakss">
+            <br><br>
+        </div>
+        <div>
+            <button name="cheakss">
+                submit
+            </button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>
