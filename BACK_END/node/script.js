@@ -6,6 +6,7 @@
 
 
 
+
 // \\ for reuire from same folder or dir
 // const math = require("./math");
 
@@ -14,9 +15,19 @@
 // console.log(div);
 
 
+
+
+// \\ use of import
+import {sum, pi} from "./math.js"
+
+console.log(sum(1,2));
+
+
+
+
 // \\ for require from different dir or folder.
-const path = require('path');
+// const path = require('path');
 
-const fruits = require(path.join(__dirname, '../XYZ'));
+// const fruits = require(path.join(__dirname, '../XYZ'));
 
-console.log(fruits);
+// console.log(fruits);
