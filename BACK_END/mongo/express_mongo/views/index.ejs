@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cheap whatsapp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <h3>All chats</h3>
+    <% for (let chat of chats) { %>
+        <br>
+        <div class="chat">
+            <p>From : <%= chat.from %></p>
+            <p>Msg : <%= chat.msg %></p>
+            <p style="display:inline;">
+                msg_changes:
+                <form style="display:inline;" method="get" action="/chats/<%=chat._id%>/edit">
+                    <button>Edit</button>
+                </form>
+                <form style="display:inline;" method="post" action="/chats/<%=chat._id%>?_method=delete">
+                    <button>delete</button>
+                </form>
+            </p>
+            <p>To : <%= chat.to %></p>   
+            <hr>  
+            <p><%= chat.created_at.toString().split(" ")[4] %></p> 
+            <p><%= chat.created_at.toString().split(" ").slice(0,4).join("-") %></p>
+        </div>
+    <% } %>
+    <br>
+    <form method="get" action="/chats/new">
+        <button>Create new</button>
+    </form>
+</body>
+</html>
+
+<!-- <p class="edit-row">
+    msg_edit:
+    <form class="Edit_button" style="display:inline;">
+        <button>Edit</button>
+    </form>
+</p> -->
